@@ -1,0 +1,46 @@
+.address-index-main{
+    position: relative;
+    display: block;
+    height: calc( 100% - 46px );
+}
+.address-index-list {
+    display: block;
+    list-style: none;
+    li {
+        background: #fff;
+        padding: 8px 10px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        ion {
+            font-size: 30px;
+            color: gray;
+        }
+        h2 {
+            font-size: 1em;
+        }
+        .main {
+            flex: 1;
+            margin: 0 15px;
+            width: 250px;
+            overflow: hidden;
+        }
+        .right {
+            min-width: 60px;
+            ion {
+                font-size: 20px;
+                margin-left: 10px;
+                color: gray;
+            }
+        }
+    }
+}
+
+empty{
+    display: block;
+    position: relative;
+    background: #efefef;
+    padding: 0px;
+    overflow: hidden;
+}

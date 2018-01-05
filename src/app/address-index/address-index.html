@@ -1,0 +1,19 @@
+<div class="address-index-main">
+    <minirefresh-default (down)="down($event)" (up)="up($event)">
+        <ul class="address-index-list">
+            <li *ngFor="let item of data">
+                <ion name="location"></ion>
+                <div class="main">
+                    <h2>{{item.address}}</h2>
+                    <p>{{item.detail}}</p>
+                </div>
+                <div class="right">
+                    <ion name="edit"></ion>
+                    <ion name="ios-trash"></ion>
+                </div>
+            </li>
+        </ul>
+        <empty *ngIf="data.length === 0"></empty>
+    </minirefresh-default>
+</div>
+<a class="weui-btn weui-btn_primary" (click)="add()">添加</a>

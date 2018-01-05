@@ -1,0 +1,8 @@
+<bmap-footer (onSave)="onSave($event)" (onInit)="setHeight($event)"></bmap-footer>
+<div style="position: relative;" [style.height]="height">
+    <bmap-container (onChange)="centerChange($event)"></bmap-container>
+    <bmap-center-icon></bmap-center-icon>
+</div>
+<div #save>
+    <a class="weui-btn weui-btn_primary" href="javascript:;" (click)="doSave()">添加地址</a>
+</div>
