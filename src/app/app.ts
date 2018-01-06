@@ -35,4 +35,4 @@ import { EmptyModule } from 'meepo-empty';
     providers: [
     ],
 })
-export class SwiperModule { }
+export class AddressModule { }
