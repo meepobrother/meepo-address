@@ -1,8 +1,9 @@
-.address-index-main{
+.address-index-main {
     position: relative;
     display: block;
-    height: calc( 100% - 46px );
+    height: calc( 100% - 46px);
 }
+
 .address-index-list {
     display: block;
     list-style: none;
@@ -13,12 +14,19 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        &:hover {
+            opacity: .8;
+        }
         ion {
             font-size: 30px;
             color: gray;
         }
         h2 {
             font-size: 1em;
+        }
+        p {
+            color: gray;
+            font-size: .9em;
         }
         .main {
             flex: 1;
@@ -37,7 +45,7 @@
     }
 }
 
-empty{
+empty {
     display: block;
     position: relative;
     background: #efefef;

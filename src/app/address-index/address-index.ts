@@ -21,10 +21,18 @@ export class AddressIndexComponent extends MeepoHistory {
         super(store, cd);
     }
 
-    meepoInit() {}
+    meepoInit() { }
 
     add() {
         this.router.navigate(['/address/add'], { queryParams: { key: this.key } });
+    }
+
+    edit(item: any) {
+        this.router.navigate(['/address/add'], { queryParams: { key: this.key, uid: item.uid } });
+    }
+
+    delete(item: any) {
+        this.removeItem(item);
     }
 
     down(e: any) {

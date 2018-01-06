@@ -8,8 +8,8 @@
                     <p>{{item.detail}}</p>
                 </div>
                 <div class="right">
-                    <ion name="edit"></ion>
-                    <ion name="ios-trash"></ion>
+                    <ion (click)="edit(item)" name="edit"></ion>
+                    <ion (click)="delete(item)"name="ios-trash"></ion>
                 </div>
             </li>
         </ul>
