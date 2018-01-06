@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SwiperModule } from '../../src/app/app';
+import { AddressModule } from '../../src/app/app';
 import { Routes, RouterModule } from '@angular/router';
 let routes: Routes = [{
   path: '',
@@ -15,7 +15,7 @@ let routes: Routes = [{
   ],
   imports: [
     BrowserModule,
-    SwiperModule,
+    AddressModule,
     RouterModule.forRoot(routes, {
       useHash: true
     })

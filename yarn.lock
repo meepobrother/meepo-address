@@ -192,8 +192,8 @@
   resolved "https://registry.yarnpkg.com/@types/core-js/-/core-js-0.9.44.tgz#0d3b179ffa612898beed19fe8cc863822da507e5"
 
 "@types/node@^8.5.1":
-  version "8.5.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.6.tgz#5cf96a225c7be86f72d3dde03c41399319bb8bdc"
+  version "8.5.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.7.tgz#9c498c35af354dcfbca3790fb2e81129e93cf0e2"
 
 "@types/strip-bom@^3.0.0":
   version "3.0.0"
@@ -3018,8 +3018,8 @@ meepo-base64@>=1.1.2:
     zone.js "0.8.4"
 
 meepo-base@>=1.2.7:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/meepo-base/-/meepo-base-1.2.8.tgz#2fbc31f0d2008fefb9c4f0544ed065e38fc70958"
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/meepo-base/-/meepo-base-1.2.9.tgz#7f695037df5be55019ae0056bdb15b45d96f35ac"
   dependencies:
     "@angular/common" ">=5.1.2"
     "@angular/core" ">=5.1.2"

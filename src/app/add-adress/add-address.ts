@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 import { BmapInputComponent, BmapFooterComponent } from 'meepo-bmap';
 
 import { ActivatedRoute, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 @Component({
     selector: 'add-address',
     templateUrl: './add-address.html',
@@ -24,12 +25,14 @@ export class AddAddressComponent implements OnInit {
     };
     key: string = '';
     uid: string = '';
+    pageTitle: string = '添加地址';
     constructor(
         public uuid: UuidService,
         public route: ActivatedRoute,
         public store: StoreService,
         public router: Router,
-        public location: Location
+        public location: Location,
+        public title: Title
     ) {
         this.route.queryParams.subscribe(res => {
             this.key = res.key;
@@ -44,7 +47,9 @@ export class AddAddressComponent implements OnInit {
             }
         });
     }
-    ngOnInit() { }
+    ngOnInit() {
+        this.title.setTitle(this.pageTitle);
+    }
     setHeight(e: number) {
         this.height = 'calc( 100% - ' + (e + this._saveRef.nativeElement.clientHeight) + 'px)';
     }

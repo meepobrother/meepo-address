@@ -2,6 +2,7 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { MeepoHistory } from 'meepo-base';
 import { StoreService } from 'meepo-store';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 @Component({
     selector: 'address-index',
     templateUrl: './address-index.html',
@@ -13,12 +14,15 @@ export class AddressIndexComponent extends MeepoHistory {
     psize: number = 10;
     max: number = 200;
     data: any[] = [];
+
+    pageTitle: string = '地址库';
     constructor(
         public store: StoreService,
         public cd: ChangeDetectorRef,
-        public router: Router
+        public router: Router,
+        public title: Title
     ) {
-        super(store, cd);
+        super(store, cd, title);
     }
 
     meepoInit() { }
