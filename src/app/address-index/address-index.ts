@@ -40,6 +40,8 @@ export class AddressIndexComponent extends MeepoHistory {
     }
 
     down(e: any) {
+        this.page = 1;
+        this.data = this.store.getList(this.key, this.page, this.psize);
         e.next(false);
     }
 
