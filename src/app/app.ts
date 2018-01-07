@@ -13,9 +13,10 @@ let routes: Routes = [{
 }];
 
 import { MeepoBmapModule } from 'meepo-bmap';
+import { MeepoCoreServiceModule } from 'meepo-core';
+
 import { MinirefreshModule } from 'meepo-minirefresh';
 import { EmptyModule } from 'meepo-empty';
-
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { EmptyModule } from 'meepo-empty';
         MeepoBmapModule,
         IconsModule,
         MinirefreshModule,
-        EmptyModule
+        EmptyModule,
+        MeepoCoreServiceModule
     ],
     exports: [
     ],
