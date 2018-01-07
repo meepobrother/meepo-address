@@ -244,7 +244,7 @@ let globals = {
     "meepo-uuid": "meepo-uuid",
     "meepo-xscroll": "meepo-xscroll",
     "meepo-empty": "meepo-empty",
-
+    "meepo-footer": "meepo-footer",
 };
 
 let plugins = [

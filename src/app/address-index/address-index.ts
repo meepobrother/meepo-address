@@ -1,6 +1,9 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { MeepoHistory } from 'meepo-base';
 import { StoreService } from 'meepo-store';
+import { EventService } from 'meepo-event';
+import { FOOTER_HIDDEN, FOOTER_SHOWN } from 'meepo-footer';
+
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 @Component({
@@ -20,12 +23,15 @@ export class AddressIndexComponent extends MeepoHistory {
         public store: StoreService,
         public cd: ChangeDetectorRef,
         public router: Router,
-        public title: Title
+        public title: Title,
+        public event: EventService
     ) {
         super(store, cd, title);
     }
 
-    meepoInit() { }
+    meepoInit() {
+        this.event.publish(FOOTER_HIDDEN, '')
+    }
 
     add() {
         this.router.navigate(['/address/add'], { queryParams: { key: this.key } });
